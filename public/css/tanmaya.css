@@ -1,0 +1,223 @@
+.link {
+  cursor: pointer;
+}
+.link.active {
+  color: #007bff;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.custom-container {
+  margin: 3rem 5rem;
+}
+.href {
+  cursor: pointer;
+  background: #ffd43c;
+  padding: 12px 15px;
+  border-radius: 20px;
+}
+.link:hover {
+  color: #ff1e1e;
+}
+
+.icon {
+  width: 40px;
+  padding-right: 10px;
+}
+
+.reset_btn {
+  background: linear-gradient(45deg, #dc3545, #ff0000);
+  padding: 10px 25px;
+  border: none;
+  box-shadow: 1px 2px 3px #c9c9c9;
+  font-weight: 500;
+  color: white;
+}
+
+
+.plus_minus {
+  color: grey;
+  font-size: 15px;
+}
+
+.section-heading {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+/*
+    Text fields
+*/
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #000;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #11998e;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}
+.site-logo {
+  padding: 7px 0px 3px 0;
+}
+
+/*
+---- Some More Stylish Buttons
+*/
+
+
+/* End of Page styling */
+
+/* Simple button styling -- No animation */
+.poped-outline-btn {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 70px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  color: #f2f2f2;
+}
+
+.poped-outline-btn::after {
+  content: "";
+  background-color: #f94340;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+}
+/* End of Simple Button */
+
+/* Fill button styling */
+.fill {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.fill::after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.fill:hover::after {
+  top: 0px;
+  left: 0px;
+}
+/* End of Fill Button  */
+
+/* Slide button styling */
+/* .slide {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 30px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.slide i {
+  opacity: 0;
+  font-size: 13px;
+  transition: 0.2s;
+  position: absolute;
+  right: 10px;
+  top: 21px;
+  transition: transform 1;
+}
+
+.slide div {
+  transition: transform 0.8s;
+}
+
+.slide:hover div {
+  transform: translateX(-6px);
+}
+
+.slide::after {
+  content: "";
+ background-color: #66f2d5;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+}
+.slide:hover i {
+  opacity: 1;
+  transform: translateX(-6px);
+}
+*/
+/* End of Slide Button  */

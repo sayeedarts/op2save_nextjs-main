@@ -1,0 +1,448 @@
+.removal_quotes {
+  padding: 4rem 0;
+  background: #f2f2f2;
+  float: left;
+  width: 100%;
+  margin-top: 30px; /*65px;*/
+}
+p.left_title {
+  font-size: 28px;
+  z-index: 0;
+  font-weight: 500;
+  position: relative;
+}
+p.left_title::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  width: 200px;
+  height: 1px;
+  background: rgb(77, 77, 77);
+}
+p.left_title::after {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: 0px;
+  height: 7px;
+  width: 100px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #ffd100, #ffe800);
+}
+p.sub_title {
+  font-weight: bold;
+  color: grey;
+}
+.loading_unloading {
+  background: #e5e5e5;
+  padding: 2rem;
+}
+
+.label_style {
+  font-weight: 500;
+  color: grey;
+  font-size: 16px;
+}
+.removal_quotes .yelloo_box {
+  background: #fff9c4;
+}
+.tab_section .nav-item {
+  border: 1px solid #dee2e6;
+  border-radius: 0px;
+}
+.tab_section .nav-link {
+  color: #495057;
+  background-color: #ffffff;
+  /* border-color: #dee2e6 #dee2e6 #fff; */
+  border-radius: 0px;
+  display: flex;
+  color: #000;
+}
+.tab_section .nav-link span {
+  display: block;
+  margin-left: 15px;
+  margin-top: 6px;
+  color: #313131;
+  font-weight: 500;
+}
+.tab_section .nav-link.active {
+  background-color: #ffd100 !important;
+  border-radius: 0px;
+  border-color: transparent !important;
+  font-weight: 500;
+}
+/* .tab_section .nav-link.active span{color: #fff;} */
+.tab_section .nav-link i {
+  padding-top: 8px;
+}
+.tab-content {
+  padding: 1rem;
+}
+
+.tab-content p.title {
+  font-weight: 500;
+  font-size: 20px;
+  color: #5a5a5a;
+}
+
+/* .arrow-left {
+      display: none;
+      width: 0;
+      height: 0;
+      border-top: 30px solid transparent;
+      border-bottom: 29px solid transparent;
+      border-left: 12px solid #888;
+      float: right;
+      margin-right: -27px;
+      margin-top: -10px;
+  } */
+
+.tab_section > .nav-link.active > a .arrow-left {
+  display: inline-block;
+}
+
+.tab_section .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 28px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 12px solid #ffd100;
+  float: right;
+  margin-top: -10px;
+  right: 4px;
+  display: none;
+}
+.tab_section .nav-link.active::before {
+  display: block;
+}
+.list_item {
+  border: 1px solid #adadad;
+  background: #fffbfb;
+  border-bottom: none;
+}
+.list_item:last-child {
+  border-bottom: 1px solid #adadad;
+}
+.list_item .item_name {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-wrap: anywhere;
+  padding-right: 30px;
+}
+.furniture_name {
+  font-weight: 500;
+  color: grey;
+}
+.list_item .unit_section {
+  display: flex;
+  width: 25%;
+  padding: 0px 10px;
+  justify-content: flex-end;
+}
+.list_item .unit_section .item_sub {
+  font-size: 28px;
+  font-weight: bold;
+  /* border: 0px 1px 0px 1px solid #adadad!important; */
+  border-left: 1px solid grey;
+  padding: 0px 10px;
+}
+.list_item .unit_section .item_sub span {
+  display: block;
+  margin-top: -3px;
+  padding: 0px 4px;
+}
+.list_item .unit_section .item_sub span a i {
+  color: grey;
+  font-size: 15px;
+}
+.list_item .unit_section .item_add span {
+  display: block;
+  margin-top: 0px;
+  padding: 0px 4px;
+}
+.list_item .unit_section .item_add span a i {
+  font-size: 15px;
+}
+.list_item .unit_section .item_add {
+  font-size: 20px;
+  font-weight: bold;
+  border-left: 1px solid grey;
+  padding: 6px 10px 0px 10px;
+}
+.list_item .unit_section .item_check {
+  font-size: 20px;
+  float: left;
+  text-align: center;
+  border-left: 1px solid grey;
+}
+.list_item .unit_section .item_check input {
+  height: 18px;
+  width: 18px;
+  margin-top: 14px;
+  margin-left: 7px;
+}
+
+.item_name span.count {
+  font-weight: 500;
+  margin-right: 10px;
+}
+/* 
+  .search_box{
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+  }
+  .search_box .input_box{position: relative;}
+  .search_box .input_box input{    height: 65px;  background: #fffff4;   padding-left: 4rem;}
+  .search_box .input_box span i{
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: #919191;
+      font-size: 22px;
+  }
+  
+  .search_box .list_search{
+      height: 200px;
+      background: rgb(255 255 255);
+      overflow-y: scroll;
+  }
+  .list_search{
+      background: #ffffff;
+      border: 2px solid #ffd200;
+      border-radius: 5px;
+      margin-top: 5px;
+      position: absolute;
+      width: 91%;
+      z-index: 9;
+  }
+  .list_search ul{list-style: none;margin-bottom: 0px;}
+  .list_search ul li{
+      border-bottom: 1px solid #e5e5e5;
+      padding: 10px 15px;
+      display: flex;
+  }
+  .list_search ul li:last-child{border-bottom: none;}
+  .search_box .list_search ul li a{
+      color: grey;text-decoration: none;
+      flex-grow: 1;
+  }
+  .list_search ul li button.add{display: none; color: #00a5ff; font-weight: 500;}
+  .list_search ul li:hover button.add{display: block; padding: 0px; font-weight: normal;}
+  /* .list_search ul li:hover a{font-weight: 600;} */
+.list_search ul li:hover {
+  background: #f2f2f2;
+}
+*/ .form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #ffd100;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(255 243 185);
+}
+.more_input_box input {
+  height: 65px;
+  background: #fffff4;
+}
+.no_bg_btn {
+  background: none;
+  font-size: 20px;
+  color: grey;
+  font-weight: 500;
+}
+.next_btn {
+  background: none;
+  border: 2px dashed #ffd100;
+  font-weight: 500;
+  padding: 10px 20px;
+  color: grey;
+  font-size: 20px;
+  margin-left: 10px;
+  transition: 0.8s all;
+}
+.next_btn:hover {
+  background: #ffd100;
+  /* color: #fff; */
+  border: 2px solid #ffd100;
+  transition: 0.8s all;
+}
+.button_section {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+.service_section {
+  margin-top: 1rem;
+  background: #e0f4ff;
+  padding: 2rem;
+}
+
+.service_section p.title {
+  font-size: 20px;
+  color: grey;
+  font-weight: 500;
+}
+.service_box {
+  display: flex;
+  padding: 18px 0px;
+  border-bottom: 1px dashed #c9c9c9;
+}
+.service_box .content {
+  display: flex;
+  flex-grow: 1;
+}
+.content p {
+  padding-left: 20px;
+  font-size: 18px;
+  margin-bottom: 0px;
+  color: rgb(0, 0, 0);
+  padding-top: 20px;
+}
+.content img {
+  height: 60px;
+}
+.service_box .check_box input {
+  height: 20px;
+  width: 20px;
+}
+.check_box {
+  padding-top: 30px;
+}
+.spl-checkbox {
+  height: 20px;
+  width: 20px;
+  padding-top: 30px;
+}
+/* .date_section{
+      margin-top: 1rem;
+      padding: 2rem 2rem 1rem;
+      background: #e0f4ff;
+  } */
+
+/* .special_instruction{
+      background: #e0f4ff;
+      margin-top: 1rem;
+      padding: 2rem 2rem;
+  } */
+
+.special_instruction .header-section {
+  display: flex;
+}
+.special_instruction .header-section p {
+  flex-grow: 1;
+  font-size: 20px;
+  margin-bottom: 0px;
+  color: #525252;
+}
+.special_instruction .header-section button i.fa-minus {
+  color: grey;
+}
+/* .special_instruction .instruction_box textarea{
+      background: #ffffdd;
+  } */
+.special_instruction .header-section .add_btn {
+  background: #ffd100;
+  color: #525252;
+  font-weight: 500;
+}
+.special_instruction .header-section .add_btn i {
+  color: #525252;
+}
+.special_button {
+  margin-top: 1rem;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+.special_button button {
+  /* background: #ff3a71; */
+  background: #525252;
+  color: #fff;
+  padding: 1rem 4rem;
+  font-size: 30px;
+  transition: 0.5s all;
+  letter-spacing: 1px;
+}
+.special_button button:hover {
+  background: #ffd200;
+  transition: 0.5s all;
+}
+
+.city p {
+  margin-bottom: 10px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.map_section {
+  background: #f2f2f2;
+  padding: 10px;
+  box-shadow: 1px 2px 3px #bebebe;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.city p span {
+  color: #444;
+  font-weight: 500;
+  display: block;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.bdr_btm {
+  border-bottom: 1px solid #ddd;
+}
+.edit_button {
+  text-align: right;
+}
+.edit_button button {
+  border: 2px dashed #ffd100;
+  padding: 10px 20px;
+  color: rgb(100, 100, 100);
+  font-weight: bold;
+  transition: 0.8s all;
+}
+
+.edit_button i {
+  margin-left: 10px;
+}
+
+.edit_button button:hover {
+  background: #ffd100;
+  /* color: #fff; */
+  border: 2px solid #ffd100;
+  transition: 0.8s all;
+}
+
+.location_label {
+  font-weight: 500;
+  margin-top: 15px;
+}
+.distance p {
+  font-weight: bold;
+  font-size: 25px;
+  color: grey;
+  text-align: center;
+}
+.addl_counter_box {
+  width: 20%;
+}
+
+.scrollable_search {
+  width: 100%;
+  background: white;
+  max-height: 250px;
+  border: 1px solid #ccc;
+  overflow-y: scroll;
+}
+.scrollable_search .item {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.scrollable_search .item i {
+  right: 0;
+  float: right;
+  cursor: pointer;
+}
